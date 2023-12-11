@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func NewGCPHandler() (*slog.HandlerOptions, *slog.LevelVar) {
+func NewGCPHandlerOptions() (*slog.HandlerOptions, *slog.LevelVar) {
 	var programLevel = new(slog.LevelVar)
 	return &slog.HandlerOptions{
 		ReplaceAttr: gcpSlogReplaceAttr,
